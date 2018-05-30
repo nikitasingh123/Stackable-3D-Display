@@ -21,45 +21,24 @@ void light(int x,int y){
 		PORTA=(a<<PA0)|(b<<PA1)|(c<<PA2)|(d<<PA3);
 	
 }
+
+
+
+
 int main(void)
 {
     DDRA=0xFF;
     while (1) 
-    {  
-		light(0,0);
-		_delay_us(2);
-		light(0,1);
-		_delay_us(2);
-		light(0,2);
-		_delay_us(2);
-		light(0,3);
-		_delay_us(2);
-		light(1,0);
-		_delay_us(2);
-		light(1,1);
-		_delay_us(2);
-		light(1,2);
-		_delay_us(2);
-		light(1,3);
-		_delay_us(2);
-		light(2,0);
-		_delay_us(2);
-		light(2,1);
-		_delay_us(2);
-		light(2,2);
-		_delay_us(2);
-		light(2,3);
-		_delay_us(2);
-		light(3,0);
-		_delay_us(2);
-		light(3,1);
-		_delay_us(2);
-		light(3,2);
-		_delay_us(2);
-		light(3,3);
-		_delay_us(2);
-		
-	 
+    { 
+    for(int i=0;i<4;i++){
+
+        for(int j=0;j<4;j++){
+
+        light(i,j);
+        _delay_us(2);
+
+          }
+       }
     }
 }
 
