@@ -23,7 +23,7 @@ int main(void)
     
     Alternate code
 
-    PORTA ^=(1<PINA0);
+    PORTA ^=(1<<PINA0);
     _delay_ms(1000);   
     
     */
